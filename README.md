@@ -131,11 +131,17 @@ An interactive dashboard to:
 Telecom-Churn/
 │
 ├── data/
+
 ├── notebook/
+
 ├── app/
+
 ├── model/
+
 ├── images/
+
 ├── requirements.txt
+
 └── README.md
 
 ---
@@ -154,7 +160,7 @@ This project demonstrates how Machine Learning can drive business decisions by p
 
 ⭐ Connect with Me
 
-🔗 LinkedIn: (www.linkedin.com/in/mohit-taluja)
-📂 GitHub: (your profile link)
+🔗 LinkedIn: www.linkedin.com/in/mohit-taluja
+📂 GitHub: https://github.com/mohittaluja1111
 
 ⭐ If you found this project useful, give it a star!
