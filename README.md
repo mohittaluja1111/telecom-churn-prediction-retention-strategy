@@ -162,7 +162,8 @@ Visual indicators (metrics + progress bar)
 <img width="1905" height="1010" alt="Snip 3" src="https://github.com/user-attachments/assets/70ddbfdb-b088-43c7-86f2-28b088d52881" />
 <img width="1906" height="1012" alt="Snip 4" src="https://github.com/user-attachments/assets/73408dab-0646-40da-aa24-1b91ef9eedc1" />
 
-▶️ Running the Project
+
+## Running the Project
 
 1️⃣ Clone Repository
 
@@ -181,23 +182,24 @@ cd app
 streamlit run app.py
 
 ## Repository Structure
+
 telecom-churn-prediction-retention-strategy/
-│
+
 ├── data/
 │   ├── telecom_churn.csv
 │   └── data_definition.xlsx
-│
+
 ├── notebooks/
 │   └── churn_analysis.ipynb
-│
+
 ├── app/
 │   ├── app.py
 │   ├── model.pkl
 │   └── requirements.txt
-│
+
 ├── images/
 │   └── dashboard.png
-│
+
 ├── README.md
 └── .gitignore
 
