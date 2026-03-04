@@ -185,23 +185,23 @@ streamlit run app.py
 
 telecom-churn-prediction-retention-strategy/
 
-├── data/
-│   ├── telecom_churn.csv
-│   └── data_definition.xlsx
+### data/
+ ── telecom_churn.csv
+ ── data_definition.xlsx
 
-├── notebooks/
-│   └── churn_analysis.ipynb
+### notebooks/
+ ── churn_analysis.ipynb
 
-├── app/
-│   ├── app.py
-│   ├── model.pkl
-│   └── requirements.txt
+### app/
+ ── app.py
+ ── model.pkl
+ ── requirements.txt
 
-├── images/
-│   └── dashboard.png
+### images/
+ ── dashboard.png
 
-├── README.md
-└── .gitignore
+ ── README.md
+ ── .gitignore
 
 ## Conclusion
 
