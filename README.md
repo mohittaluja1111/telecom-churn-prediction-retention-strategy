@@ -129,6 +129,7 @@ An interactive dashboard to:
 ## 📂 Project Structure
 
 Telecom-Churn/
+
 │
 ├── data/
 
@@ -157,6 +158,8 @@ streamlit run app.py
 🏁 Conclusion
 
 This project demonstrates how Machine Learning can drive business decisions by predicting churn and enabling proactive retention strategies, ultimately improving customer lifetime value.
+
+---
 
 ⭐ Connect with Me
 
