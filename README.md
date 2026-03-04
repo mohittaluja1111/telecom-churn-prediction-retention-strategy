@@ -186,21 +186,29 @@ streamlit run app.py
 telecom-churn-prediction-retention-strategy/
 
 ### data/
+
  ── telecom_churn.csv
+ 
  ── data_definition.xlsx
 
 ### notebooks/
+
  ── churn_analysis.ipynb
 
 ### app/
+
  ── app.py
+ 
  ── model.pkl
+ 
  ── requirements.txt
 
 ### images/
+
  ── dashboard.png
 
  ── README.md
+ 
  ── .gitignore
 
 ## Conclusion
