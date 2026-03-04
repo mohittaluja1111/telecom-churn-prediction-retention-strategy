@@ -1,236 +1,160 @@
-# Telecom Churn Prediction & Retention Intelligence System
+# 📡 Churn Prediction & Retention Strategy for a Telecom Provider
 
-## Project Summary
+### 👤 Author: Mohit Taluja  
+### 🎓 Capstone Project | Data Science | Machine Learning  
 
-Customer churn directly impacts revenue in the telecom industry. This project delivers a complete data-driven solution to identify customers at risk of churn and recommend targeted retention actions.
+---
 
-## It combines:
+## 🚀 Project Overview
+Customer churn is a major challenge in the telecom industry, directly impacting revenue and growth.  
+This project builds an **end-to-end Machine Learning pipeline** to predict customer churn and provide actionable retention strategies.
 
-📊 Exploratory Data Analysis (EDA)
+---
 
-🧠 Machine Learning (XGBoost Pipeline)
+## 🎯 Problem Statement
+- High customer churn leads to revenue loss  
+- Retaining customers is cheaper than acquiring new ones  
+- Goal: **Predict churn + enable proactive retention**
 
-⚙️ Feature Engineering
+---
 
-🌐 Interactive Streamlit Dashboard
+## 📊 Dataset Overview
+The dataset includes:
 
-➡️ The goal is to shift from reactive churn handling → proactive retention strategy
+- 👤 Customer demographics  
+- 📶 Service usage patterns  
+- 💳 Billing & payment details  
+- 📉 Complaint & engagement metrics  
 
-## Business Objective
+**Target Variable:**  
+`is_churn (1 = churn, 0 = retained)`
 
-The primary objective is to:
+---
 
-Predict churn probability for each customer
+## 🔍 Exploratory Data Analysis (EDA)
 
-Understand key behavioral and financial drivers
+### 📌 Key Insights:
+- Low tenure customers are more likely to churn  
+- High monthly charges increase churn risk  
+- Complaints strongly correlate with churn  
 
-Enable telecom teams to take timely retention actions
+### 📷 Visualizations:
+ <img width="716" height="622" alt="EDA-1" src="https://github.com/user-attachments/assets/13d488ef-4d52-4dda-b55e-9ee91a0897fa" />
+<img width="1042" height="563" alt="EDA-2" src="https://github.com/user-attachments/assets/213573fb-ed9b-4a8d-9097-1c44bcdfbd16" />
+<img width="816" height="603" alt="EDA-3" src="https://github.com/user-attachments/assets/7239df9a-1d08-4399-a89c-36ccd6789bef" />
+<img width="448" height="590" alt="EDA-4" src="https://github.com/user-attachments/assets/80f0773b-85a4-4adc-8148-e6a87a57079a" />
+<img width="701" height="427" alt="EDA-5" src="https://github.com/user-attachments/assets/e4cf2100-ee7d-4f4a-931b-c9841ffccb1b" />
 
-## Data Overview
+---
 
-The dataset includes multiple dimensions of customer behavior:
+## ⚙️ Feature Engineering
 
-Customer Lifecycle → tenure, contract type
+Created powerful features to improve model performance:
 
-Financial Data → monthly charges, payment behavior
+- 📊 **Engagement Score** → app activity + transactions  
+- ⚠️ **Payment Risk** → delays + late payments  
+- 💰 **CLV Proxy** → revenue × tenure  
 
-Customer Experience → complaints, service usage
+---
 
-Engagement Metrics → app usage, transactions
+## 🤖 Model Building
 
-## Target Variable
+Models used:
+- Logistic Regression  
+- Random Forest  
+- ⭐ XGBoost (Final Model)  
 
-is_churn → Indicates whether a customer has churned
+### 🔧 Pipeline:
+- Data preprocessing  
+- Scaling & encoding  
+- Model training  
 
-## Feature Engineering (Key Highlight)
+---
 
-To enhance model performance, new business-driven features were created:
+## 📈 Model Evaluation
 
-engagement_score → Customer activity level
+### 📊 Performance Metrics:
+- ROC-AUC Score: **0.60+**  
+- Precision, Recall, F1-score  
 
-payment_risk → Likelihood of delayed payments
+### 📷 Visuals:
+<img width="720" height="687" alt="Confusion Matrix" src="https://github.com/user-attachments/assets/9b644302-f0fd-4ea8-a47c-98f7841e9ee7" />
+<img width="868" height="492" alt="ROC-AUC Score" src="https://github.com/user-attachments/assets/de09e3b5-6cda-4250-bc4d-3c1cc3d2877e" />
 
-clv_proxy → Estimated customer lifetime value
+---
 
-These features helped capture real-world customer behavior patterns beyond raw data.
+## 💡 Key Business Insights
 
-## Exploratory Data Analysis
+- 📉 Low tenure → high churn risk  
+- 💸 High charges → dissatisfaction  
+- 📞 Frequent complaints → churn signal  
 
-EDA revealed strong churn patterns:
+---
 
-📉 Customers with low tenure are more likely to churn
+## 🧠 Business Recommendations
 
-💸 Higher monthly charges increase churn probability
+- 🎯 Target high-risk customers  
+- 💰 Offer personalized discounts  
+- ⚡ Improve service quality  
+- 📲 Increase customer engagement  
 
-📑 Month-to-month contracts show higher churn risk
+---
 
-⚠️ Frequent complaints strongly correlate with churn
+## 🖥️ Streamlit Web App
 
-## Visual analysis included:
+An interactive dashboard to:
+- Input customer details  
+- Predict churn probability  
+- Get risk level & recommendations  
 
-Distribution plots
+### 📷 App Screens:
+ <img width="1903" height="995" alt="Snip 1" src="https://github.com/user-attachments/assets/5ba49c8d-1298-46b4-a9c4-19e59fedc070" />
+<img width="1908" height="1010" alt="Snip 2" src="https://github.com/user-attachments/assets/7e8c687e-9069-499b-aca0-2861c18ea0b0" />
+<img width="1905" height="1010" alt="Snip 3" src="https://github.com/user-attachments/assets/489251a2-0d58-4374-81a7-0a68287f3b38" />
+<img width="1906" height="1012" alt="Snip 4" src="https://github.com/user-attachments/assets/1265d04e-1915-45aa-976f-34778edab9a8" />
 
-Churn segmentation charts
+---
 
-Correlation heatmaps
+## 🛠️ Tech Stack
 
-<img width="716" height="622" alt="EDA-1" src="https://github.com/user-attachments/assets/3066b32e-7b66-433b-b93a-365cea7f5ea1" />
-<img width="1042" height="563" alt="EDA-2" src="https://github.com/user-attachments/assets/94c05885-39f2-4f07-9f09-3404beca8dd8" />
-<img width="816" height="603" alt="EDA-3" src="https://github.com/user-attachments/assets/d64e5d53-6de9-463f-87c1-405fe18e1a36" />
-<img width="448" height="590" alt="EDA-4" src="https://github.com/user-attachments/assets/9c17b714-119f-40bd-b83e-8ad9b0a42006" />
-<img width="701" height="427" alt="EDA-5" src="https://github.com/user-attachments/assets/00a81b23-8139-4071-a753-af00cfc2b5f3" />
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- XGBoost  
+- Streamlit  
+- Matplotlib, Seaborn  
 
-## Modeling Approach
+---
 
-A machine learning pipeline was built to ensure consistency and scalability:
+## 📂 Project Structure
 
-## Preprocessing
+Telecom-Churn/
+│
+├── data/
+├── notebook/
+├── app/
+├── model/
+├── images/
+├── requirements.txt
+└── README.md
 
-Standardization of numerical features
+---
 
-One-hot encoding for categorical variables
+## 🚀 How to Run
 
-## Model
-
-XGBoost Classifier (optimized for tabular data)
-
-## Pipeline Advantage
-
-Eliminates preprocessing mismatch
-
-Ensures seamless deployment in Streamlit
-
-# Model Evaluation
-
-The model was evaluated using:
-
-## ROC-AUC Score
-
-Precision & Recall
-
-F1-Score
-
-<img width="868" height="492" alt="ROC-AUC Score" src="https://github.com/user-attachments/assets/abc94921-fec4-4346-814e-d7fea47efea8" />
-
-## Confusion Matrix
-
-✔️ Strong performance in identifying high-risk churn customers
-✔️ Focus on recall to minimize missed churn cases
-
-<img width="720" height="687" alt="Confusion Matrix" src="https://github.com/user-attachments/assets/5a1117de-42fb-41a8-b261-ae3cf0db527a" />
-
-## Key Insights
-
-New customers are highly prone to churn
-
-Flexible contracts increase churn likelihood
-
-Low engagement is a major churn signal
-
-Payment delays indicate financial risk behavior
-
-💼 Business Recommendations
-
-🎯 Target high-risk customers with personalized offers
-
-📶 Improve service quality and complaint handling
-
-📱 Increase engagement through app-based incentives
-
-💳 Encourage auto-pay to reduce payment-related churn
-
-🤖 Integrate model into CRM for proactive retention
-
-## Streamlit Application
-
-An interactive web application was developed to make the model usable for business teams.
-
-✨ Features
-
-Real-time churn prediction
-
-User-friendly input interface
-
-Risk categorization (High / Medium / Low)
-
-Actionable business recommendations
-
-Visual indicators (metrics + progress bar)
-
-<img width="1903" height="995" alt="Snip 1" src="https://github.com/user-attachments/assets/f6077bde-c65d-47ec-8ede-37bd8dce06db" />
-<img width="1908" height="1010" alt="Snip 2" src="https://github.com/user-attachments/assets/86623bd8-1a02-49b4-af35-8759a4963095" />
-<img width="1905" height="1010" alt="Snip 3" src="https://github.com/user-attachments/assets/70ddbfdb-b088-43c7-86f2-28b088d52881" />
-<img width="1906" height="1012" alt="Snip 4" src="https://github.com/user-attachments/assets/73408dab-0646-40da-aa24-1b91ef9eedc1" />
-
-
-## Running the Project
-
-1️⃣ Clone Repository
-
+```bash
 git clone <your-repo-link>
-
-cd telecom-churn-prediction-retention-strategy
-
-2️⃣ Install Dependencies
-
+cd Telecom-Churn
 pip install -r requirements.txt
-
-3️⃣ Run Streamlit App
-
-cd app
-
 streamlit run app.py
 
-## Repository Structure
+🏁 Conclusion
 
-telecom-churn-prediction-retention-strategy/
+This project demonstrates how Machine Learning can drive business decisions by predicting churn and enabling proactive retention strategies, ultimately improving customer lifetime value.
 
-### data/
+⭐ Connect with Me
 
- ── telecom_churn.csv
- 
- ── data_definition.xlsx
+🔗 LinkedIn: (www.linkedin.com/in/mohit-taluja)
+📂 GitHub: (your profile link)
 
-### notebooks/
-
- ── churn_analysis.ipynb
-
-### app/
-
- ── app.py
- 
- ── model.pkl
- 
- ── requirements.txt
-
-### images/
-
- ── dashboard.png
- 
-
- ── README.md
- 
- ── .gitignore
-
-## Conclusion
-
-This project demonstrates how machine learning can be effectively used to predict customer churn and drive business decisions.
-
-By combining predictive modeling with actionable insights and an interactive dashboard, the solution enables telecom companies to:
-
-Reduce churn rate
-
-Optimize retention strategies
-
-Improve customer lifetime value
-
-## Author
-
-Mohit Taluja
-Aspiring Data Scientist | AI & Analytics Enthusiast
-
-## Support
-
-If this project adds value:
-👉 Star the repository
-👉 Share your feedback
+⭐ If you found this project useful, give it a star!
